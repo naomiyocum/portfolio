@@ -35,7 +35,7 @@
           <img src="images/naomi.png" alt="Naomi's Profile Picture">
         </div>
         <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
+          <h2 class="sub-title">About Me</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis risus vitae diam molestie pulvinar. Mauris mollis
           porttitor ipsum at vulputate. Nullam malesuada mi eu metus lobortis euismod ac nec dolor. Quisque suscipit ligula sed
           dui rutrum euismod. Sed porta sem et pellentesque facilisis. Ut tellus diam, tincidunt a euismod sed, facilisis sed
@@ -43,20 +43,55 @@
           pretium odio, sodales finibus nisl.</p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-          <div class="tab-contents">
+          <div class="tab-contents active-tab" id="skills">
             <ul>
               <li><span>Backend Development</span><br>Ruby on Rails</li>
               <li><span>Relational Databases</span><br>PostgreSQL</li>
               <li><span>REST APIs</span><br>API Development & Testing</li>
             </ul>
           </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2020-2021</span><br>Web Services Representative</li>
+              <li><span>2018-2019</span><br>Sales Manager</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-2023</span><br>Back-End Software Engineering Certificate at Turing School</li>
+              <li><span>2014-2018</span><br>BSBA from University of Richmond</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!----------Work------->
+  <div id="work">
+    <div class="container">
+      <h2 class="sub-title">Some Things I've Built</h2>
+    </div>
+
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+
+  </script>
 </body>
 </html>
