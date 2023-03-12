@@ -21,7 +21,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-img:hover{
+#kaimondake:hover{
   box-shadow: 0 0 2px 1px #0099CC;
 }
 .logo{
@@ -149,4 +149,63 @@ nav ul li a:hover::after{
   width: 100%;
   border-radius: 10px;
   display: block;
+}
+/* ----- contact ---- */
+#contact {
+  padding: 60px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/okinawa.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#contact-blurb{
+  font-size: larger;
+  text-align: center;
+  line-height: 1.5;
+  padding: 25px;
+}
+.contact-container{
+  padding: 20px 2%;
+}
+.mini-contact-container {
+  text-align: center;
+}
+#luffy{
+  width: 150px;
+}
+.email-link {
+  transition-duration: 0.4s;
+  background-color: #003847;
+  color: #fff;
+  border: 2px solid #0099CC;
+  padding: 10px;
+  text-decoration: none;
+}
+.email-link:hover {
+  background-color: #0099CC;
+  /* Green */
+  color: #fff;
+}
+#luffy-img{
+  width: 80%;
+}
+#luffy{
+  position: relative;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  0% {
+    left: 0;
+  }
+  50% {
+    -webkit-transform: rotate(1400deg);
+    transform: rotate(1400deg);
+    left: 90%;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    left: 0
+  }
 }
