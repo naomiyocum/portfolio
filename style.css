@@ -46,7 +46,7 @@ nav ul li a{
 nav ul li a::after{
   content: '';
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #00bfff;
   position: absolute;
   left: 0;
@@ -70,6 +70,13 @@ nav ul li a:hover::after{
 }
 
 /* ---- About ---- */
+.about-divider {
+  display: block;
+  margin: 20px;
+  width: 200px;
+  height: 2px;
+  background-color: #00bfff;
+}
 #about{
   padding: 60px 0;
   color: #fff;
@@ -108,7 +115,7 @@ nav ul li a:hover::after{
 .tab-links::after{
   content: '';
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #00bfff;
   position: absolute;
   left: 0;
@@ -135,6 +142,13 @@ nav ul li a:hover::after{
   display: block;
 }
 /* ----- work ---- */
+.divider{
+  display: block;
+  margin: 40px;
+  width: 200px;
+  height: 2px;
+  background-color: #00bfff;
+}
 #work{
   padding: 100px 0;
   background-image: linear-gradient(#0c3c63, #0d497a)
