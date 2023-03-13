@@ -25,9 +25,26 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+#content-image{
+  position: relative;
+}
+.kaimondake-resume{
+  position: absolute;
+  bottom: 9px;
+  left: 22px;
+  font-size: 0.6em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+.content-image:hover .kaimondake-resume{
+  visibility: visible;
+  opacity: 1;
+}
 #kaimondake:hover{
   box-shadow: 0 0 2px 1px #00bfff;
   border-radius: 35px;
+
 }
 .logo{
   width: 80px;
@@ -37,6 +54,7 @@ nav {
   right: 0;
   background: #154b77f6;
   border-radius: 35px;
+  z-index: 1;
 }
 nav ul li{
   display: inline-block;
