@@ -157,7 +157,7 @@ nav ul li a:hover::after{
   padding: 60px 25px;
 }
 .work-row img{
-  width: 70%;
+  width: 60%;
   border-radius: 10px;
 }
 .description-title{
@@ -183,6 +183,7 @@ nav ul li a:hover::after{
   border: 2px solid #00bfff;
   padding: 10px 20px;
   text-decoration: none;
+  border-radius: 15px;
 }
 .work-buttons:hover {
   background-color: #0099cc6b;
@@ -240,6 +241,7 @@ nav ul li a:hover::after{
   border: 2px solid #00bfff;
   padding: 10px;
   text-decoration: none;
+  border-radius: 15px;
 }
 .email-link:hover {
   background-color: #0099cc6b;
