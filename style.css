@@ -67,7 +67,7 @@ nav ul li a:hover::after{
 
 /* ---- About ---- */
 #about{
-  padding: 100px 0;
+  padding: 60px 0;
   color: #fff;
 }
 .row{
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
   flex-wrap: wrap;
 }
 .about-col-1{
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 .about-col-1 img{
   width: 90%;
