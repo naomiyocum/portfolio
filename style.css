@@ -8,6 +8,10 @@ body{
   background: #0c3c63;
   color: #fff;
 }
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.467);
+}
 #header{
   width: 100%;
   height: 100vh;
@@ -42,7 +46,7 @@ nav ul li a{
 nav ul li a::after{
   content: '';
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #00bfff;
   position: absolute;
   left: 0;
@@ -66,6 +70,13 @@ nav ul li a:hover::after{
 }
 
 /* ---- About ---- */
+.about-divider {
+  display: block;
+  margin: 20px;
+  width: 200px;
+  height: 2px;
+  background-color: #00bfff;
+}
 #about{
   padding: 60px 0;
   color: #fff;
@@ -104,7 +115,7 @@ nav ul li a:hover::after{
 .tab-links::after{
   content: '';
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #00bfff;
   position: absolute;
   left: 0;
@@ -131,25 +142,75 @@ nav ul li a:hover::after{
   display: block;
 }
 /* ----- work ---- */
+.divider{
+  display: block;
+  margin: 40px;
+  width: 200px;
+  height: 2px;
+  background-color: #00bfff;
+}
 #work{
   padding: 100px 0;
   background-image: linear-gradient(#0c3c63, #0d497a)
 }
 .work-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+  padding: 60px 25px;
 }
-.work{
+.work-row img{
+  width: 55%;
   border-radius: 10px;
-  position: relative;
+}
+.description-title{
+  font-size: 1.5em;
+  padding-bottom: 12px;
+}
+.work-info{
+  padding: 20px;
+  font-size: 1.1em;
+}
+.description-container{
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.description-buttons{
+  padding: 10px;
+}
+.work-buttons {
+  transition-duration: 0.4s;
+  background-color: #003847;
+  color: #fff;
+  border: 2px solid #00bfff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.work-buttons:hover {
+  background-color: #0099cc6b;
+  /* Green */
+  color: #fff;
+}
+.tech-stack{
+  padding-top: 20px;
+}
+.techs-used{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
-.work img{
-  width: 100%;
-  border-radius: 10px;
-  display: block;
+.techs-used a{
+  color: white;
+}
+.tech-used{
+  float: left;
+  padding: 10px;
+  font-size: 0.75em;
+}
+.tech-used span{
+  padding: 5px;
+  background-color: #003847;
+  border-radius: 5px;
 }
 /* ----- contact ---- */
 #contact {
@@ -183,6 +244,7 @@ nav ul li a:hover::after{
   border: 2px solid #00bfff;
   padding: 10px;
   text-decoration: none;
+  border-radius: 15px;
 }
 .email-link:hover {
   background-color: #0099cc6b;

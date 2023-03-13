@@ -37,6 +37,7 @@
         </div>
         <div class="about-col-2">
           <h2 class="sub-title">About Me</h2>
+          <span class="about-divider"></span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis risus vitae diam molestie pulvinar. Mauris mollis
           porttitor ipsum at vulputate. Nullam malesuada mi eu metus lobortis euismod ac nec dolor. Quisque suscipit ligula sed
           dui rutrum euismod. Sed porta sem et pellentesque facilisis. Ut tellus diam, tincidunt a euismod sed, facilisis sed
@@ -75,15 +76,84 @@
   <div id="work">
     <div class="container">
       <h2 class="sub-title">Some Things I've Built</h2>
+      <span class="divider"></span>
       <div class="work-list">
-        <div class="work">
-          <img src="images/battleship.png" alt="Battelship">
+        <div class="work-row">
+          <img src="images/brucycle.png" alt="BrüCycle">
+          <div class="work-info">
+            <div class="description-container">
+              <div class="description-title"><h2>BrüCycle</h2></div>
+              <div class="description-buttons">
+                <a class="work-buttons" href="https://brucycle-fe.herokuapp.com/" target="_blank">Site</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="work-buttons" href="https://github.com/BruCycle/" target="_blank">Code</a>
+              </div>
+            </div>
+            <p class="work-summary">BrüCycle was developed to inspire users to choose a more eco-friendly mode of transportation.
+              Using the Brügorithm™, users
+              can track their biking exercise data via <a href="https://www.strava.com/" target="_blank">Strava</a> and the number of beers they
+              have accumulated during said exercise.
+              You will accumulate beers in your BrüBank based on the amount of miles and calories burned in bicycle rides
+              you've completed.</p>
+            <div class="tech-stack">
+              <ul class="techs-used">
+                <li class="tech-used"><span><a href="https://guides.rubyonrails.org/" target="_blank">Ruby on Rails</a></span></li>
+                <li class="tech-used"><span><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></span></li>
+                <li class="tech-used"><span><a href="https://restfulapi.net/" target="_blank">REST APIs</a></span></li>
+                <li class="tech-used"><span><a href="https://getbootstrap.com/" target="_blank">Boostrap</a></span></li>
+                <li class="tech-used"><span><a href="https://developers.strava.com/docs/authentication/" target="_blank">Strava OAuth</a></span></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="work">
-          <img src="images/brucycle.png" alt="BruCycle">
-        </div>
-        <div class="work">
+        <span class="divider"></span>
+        <div class="work-row">
           <img src="images/bookworm.png" alt="Bookworm">
+          <div class="work-info">
+            <div class="description-container">
+              <div class="description-title">
+                <h2>Bookworm</h2>
+              </div>
+              <div class="description-buttons">
+                <a class="work-buttons" href="https://bookworm-fe.vercel.app/"
+                  target="_blank">Site</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="work-buttons" href="https://github.com/Capstone-Bookworm/bookworm-be" target="_blank">Code</a>
+              </div>
+            </div>
+            <p class="work-summary">Say goodbye to cluttered bookshelves and hello to a new way of reading. Bookworm connects you with a community of book
+            lovers who are eager to share their favorite stories with one another. Simply swap books with members of our community
+            and enjoy new stories for free!</p>
+            <div class="tech-stack">
+              <ul class="techs-used">
+                <li class="tech-used"><span><a href="https://guides.rubyonrails.org/" target="_blank">Ruby on Rails</a></span></li>
+                <li class="tech-used"><span><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></span></li>
+                <li class="tech-used"><span><a href="https://graphql.org/" target="_blank">GraphQL</a></span></li>
+                <li class="tech-used"><span><a href="https://circleci.com/" target="_blank">CirclCI</a></span></li>
+                <li class="tech-used"><span><a href="https://www.postman.com/" target="_blank">Postman</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="divider"></span>
+        <div class="work-row">
+          <img src="images/battleship.png" alt="BrüCycle">
+          <div class="work-info">
+            <div class="description-container">
+              <div class="description-title">
+                <h2>Battleship</h2>
+              </div>
+              <div class="description-buttons">
+                <a class="work-buttons" href="https://github.com/naomiyocum/battleship" target="_blank">Code</a>
+              </div>
+            </div>
+            <p class="work-summary">A command-line application (CLI) in Ruby of the classic game <a href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">Battleship!</a></a></p>
+            <div class="tech-stack">
+              <ul class="techs-used">
+                <li class="tech-used"><span><a href="https://www.ruby-lang.org/en/documentation/" target="_blank">Ruby</a></span></li>
+                <li class="tech-used"><span><a href="https://rspec.info/" target="_blank">Rspec</a></span></li>
+                <li class="tech-used"><span><a href="https://github.com/simplecov-ruby/simplecov" target="_blank">SimpleCov</a></span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -97,7 +167,7 @@
       <div id="luffy">
         <img id="luffy-img" src="images/transparent_luffy.png" alt="Luffy Onigiri">
       </div>
-      <p id="contact-blurb">Whether you have any project ideas, want to chat,<br>or have a job opportunity (please lol), reach out!</p>
+      <p id="contact-blurb">Whether you have any project ideas, want to chat,<br>or have a job opportunity, please reach out!</p>
       <a class="email-link" href="mailto:naomiyocum24@gmail.com">Say Hello</a><br><br>
     </div>
   </div>
