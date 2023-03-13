@@ -1,11 +1,11 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Slab', serif;
   box-sizing: border-box;
 }
 body{
-  background: #003847;
+  background: #0c3c63;
   color: #fff;
 }
 #header{
@@ -21,8 +21,8 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-img:hover{
-  box-shadow: 0 0 2px 1px #0099CC;
+#kaimondake:hover{
+  box-shadow: 0 0 2px 1px #00bfff;
 }
 .logo{
   width: 80px;
@@ -43,7 +43,7 @@ nav ul li a::after{
   content: '';
   width: 0;
   height: 3px;
-  background: #0099CC;
+  background: #00bfff;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -62,12 +62,12 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-  color:#0099CC
+  color:#00bfff
 }
 
 /* ---- About ---- */
 #about{
-  padding: 100px 0;
+  padding: 60px 0;
   color: #fff;
 }
 .row{
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
   flex-wrap: wrap;
 }
 .about-col-1{
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 .about-col-1 img{
   width: 90%;
@@ -105,7 +105,7 @@ nav ul li a:hover::after{
   content: '';
   width: 0;
   height: 3px;
-  background: #0099CC;
+  background: #00bfff;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -121,7 +121,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-  color: #0099CC;
+  color: #00bfff;
   font-size: 18px;
 }
 .tab-contents{
@@ -133,6 +133,7 @@ nav ul li a:hover::after{
 /* ----- work ---- */
 #work{
   padding: 100px 0;
+  background-image: linear-gradient(#0c3c63, #0d497a)
 }
 .work-list{
   display: grid;
@@ -149,4 +150,66 @@ nav ul li a:hover::after{
   width: 100%;
   border-radius: 10px;
   display: block;
+}
+/* ----- contact ---- */
+#contact {
+  padding: 60px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/okinawa.png);
+  background-size: auto 200%;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+#contact-blurb{
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+  padding: 25px;
+}
+.contact-container{
+  padding: 20px 2%;
+}
+.mini-contact-container {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 250px;
+}
+#luffy{
+  width: 150px;
+}
+.email-link {
+  transition-duration: 0.4s;
+  background-color: #003847;
+  color: #fff;
+  border: 2px solid #00bfff;
+  padding: 10px;
+  text-decoration: none;
+}
+.email-link:hover {
+  background-color: #0099cc6b;
+  /* Green */
+  color: #fff;
+}
+#luffy-img{
+  width: 80%;
+}
+#luffy{
+  position: relative;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  0% {
+    left: 0;
+  }
+  50% {
+    -webkit-transform: rotate(1400deg);
+    transform: rotate(1400deg);
+    left: 90%;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    left: 0
+  }
 }
