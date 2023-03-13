@@ -157,7 +157,7 @@ nav ul li a:hover::after{
   padding: 60px 25px;
 }
 .work-row img{
-  width: 60%;
+  width: 55%;
   border-radius: 10px;
 }
 .description-title{
@@ -198,6 +198,9 @@ nav ul li a:hover::after{
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+.techs-used a{
+  color: white;
 }
 .tech-used{
   float: left;
