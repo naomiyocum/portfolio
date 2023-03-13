@@ -159,7 +159,6 @@ nav ul li a:hover::after{
 .work-row img{
   width: 70%;
   border-radius: 10px;
-  
 }
 .description-title{
   font-size: 1.5em;
@@ -167,6 +166,7 @@ nav ul li a:hover::after{
 }
 .work-info{
   padding: 20px;
+  font-size: 1.1em;
 }
 .description-container{
   padding-top: 25px;
@@ -201,6 +201,7 @@ nav ul li a:hover::after{
 .tech-used{
   float: left;
   padding: 10px;
+  font-size: 0.75em;
 }
 .tech-used span{
   padding: 5px;
