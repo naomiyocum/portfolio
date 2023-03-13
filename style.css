@@ -275,3 +275,22 @@ nav ul li a:hover::after{
     left: 0
   }
 }
+/* FOOTER */
+.footer{
+  padding: 20px;
+  text-align: center;
+}
+.footer ul li img{
+  width: 3em;
+}
+.listed-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+.icon {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.75em;
+}
