@@ -15,6 +15,7 @@ a{
 #header{
   width: 100%;
   height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/bamboo.png);
 }
 .container {
   padding: 20px 2%;
@@ -82,16 +83,26 @@ nav ul li a:hover::after{
 .header-text{
   margin-top: 20%;
   font-size: 30px;
+  text-shadow: 2px 2px #151515;
 }
-
+p.header{
+  font-size: 2em;
+}
 .header-text h1{
   font-size: 60px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .header-text h1 span{
   color:#00bfff
 }
+h1.unique {
+  font-family: 'Righteous', cursive;
+  font-size: 5em;
+  color: #d3d3d3;
+  text-shadow: 2px 2px #151515;
+}
+
 
 /* ---- About ---- */
 .about-divider {
@@ -101,9 +112,29 @@ nav ul li a:hover::after{
   height: 2px;
   background-color: #00bfff;
 }
+span.inside-about-divider {
+  display: block;
+  margin: 20px;
+  width: 85em;
+  height: 2px;
+  background-color: #00bfff;
+}
 #about{
   padding: 60px 0;
   color: #fff;
+}
+.about-list{
+  font-size: 1.5em;
+}
+ul.about-list{
+  list-style-type: circle;
+  line-height: 2;
+}
+span.about-span{
+  color:#00bfff;
+}
+span.quote-exp{
+  font-size: x-small;
 }
 .row{
   display: flex;
@@ -112,6 +143,7 @@ nav ul li a:hover::after{
 }
 .about-col-1{
   flex-basis: 40%;
+  margin-top: 70px;
 }
 .about-col-1 img{
   width: 90%;
@@ -119,15 +151,24 @@ nav ul li a:hover::after{
 }
 .about-col-2{
   flex-basis: 60%;
+  margin-top: 70px;
 }
 .sub-title{
   font-size: 60px;
   font-weight: 600;
   color: #fff;
 }
+.about-me-blurb{
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
+}
+.tab-titles p{
+  font-size: 5em;
 }
 .tab-links{
   margin-right: 80px;
@@ -152,7 +193,7 @@ nav ul li a:hover::after{
 .tab-contents ul li{
   list-style: none;
   margin: 10px 0;
-  font-size: 22px;
+  font-size: 40px;
 }
 
 .tab-contents ul li span{
@@ -175,14 +216,31 @@ nav ul li a:hover::after{
 }
 #work{
   padding: 100px 0;
-  background-image: linear-gradient(#0c3c63, #0d497a)
+  background-color: #335b2f
 }
 .work-list{
   padding: 60px 25px;
 }
 .work-row img{
-  width: 55%;
+  width: 80%;
   border-radius: 10px;
+}
+.pic-snip{
+  display:flex;
+}
+.work-image{
+  flex-basis: 70%;
+}
+.work-snippet{
+  flex-basis: 40%;
+  border: 2px;
+  padding: 20px 40px;
+  border-style: dotted;
+  border-color: #00bfff;
+}
+.work-snippet ul{
+  list-style-type: circle;
+  margin-left: 20px;
 }
 .description-title{
   font-size: 1.5em;
