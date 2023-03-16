@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>なおみ</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,8 +27,8 @@
         </nav>
       </div>
       <div class="header-text">
-        <p>Software Developer</p>
-        <h1>Hi, I'm <span>Naomi</span> Yocum<br>From Denver</h1>
+        <p class="header">Software Developer</p>
+        <h1 class="unique">Hello World,<br> I'm Naomi Yocum<br></h1>
       </div>
     </div>
   </div>
@@ -35,14 +36,8 @@
   <div class="about" id="about">
     <div class="container">
       <div class="row">
-        <div class="about-col-1">
-          <img src="images/naomi.png" alt="Naomi's Profile Picture">
-        </div>
-        <div class="about-col-2">
-          <h2 class="sub-title">About Me</h2>
-          <span class="about-divider"></span>
-          <p></p>
-
+        <span class="inside-about-divider"></span>
+        <div class="about-me-blurb">
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -68,7 +63,27 @@
             </ul>
           </div>
         </div>
-      </div>
+        <span class="inside-about-divider"></span>
+        <div class="about-col-1">
+          <img src="images/naomi.png" alt="Naomi's Profile Picture">
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <span class="about-divider"></span>
+          
+          <ul class="about-list">
+            <li><span class="about-span">Where I've Lived:</span> Germany, Italy, Japan, USA</li>
+            <li><span class="about-span">Where I've Visited:</span> Vietnam, China, Singapore, Taiwan, Hong Kong, Austria, UK, Spain, The Bahamas</li>
+            <li><span class="about-span">Likes:</span> Clean, pretty code and Rails Magic</li>
+            <li><span class="about-span">Dislikes:</span> Xfinity Internet</li>
+            <li><span class="about-span">Code Jams:</span> Studio Ghibli Music and Jazz</li>
+            <li><span class="about-span">Hobbies:</span> Dog parks with Zuko, snorkeling, and floatin' in the ocean</li>
+            <li><span class="about-span">Aspiring Hobbies:</span> Building Keyboards</li>
+            <li><span class="about-span">Favorite Quote:</span> なんくるないさー &nbsp;<span class="quote-exp">"Everything will work out"</span></li>
+            <li><span class="about-span">Values:</span> Support, Empathy, Collaboration, Humor</li>
+          </ul>
+        </div>
+      </div><br><br>
     </div>
   </div>
   <!----------Work------->
@@ -78,7 +93,18 @@
       <span class="divider"></span>
       <div class="work-list">
         <div class="work-row">
-          <img src="images/brucycle.png" alt="BrüCycle">
+          <div class="pic-snip">
+            <div class="work-image"><img src="images/brucycle.png" alt="BrüCycle"></div>
+            <!-- <div class="work-snippet">
+              <h3>My Contributions</h3>
+              <ul>
+                <li></li>
+              </ul>
+              <h3>Challenges</h3>
+              <h3>Scale</h3>
+            </div> -->
+          </div>
+          
           <div class="work-info">
             <div class="description-container">
               <div class="description-title"><h2>BrüCycle</h2></div>
@@ -106,7 +132,17 @@
         </div>
         <span class="divider"></span>
         <div class="work-row">
-          <img src="images/bookworm.png" alt="Bookworm">
+          <div class="pic-snip">
+            <div class="work-image"><img src="images/bookworm.png" alt="Bookworm"></div>
+            <!-- <div class="work-snippet">
+              <h3>My Contributions</h3>
+              <ul>
+                <li></li>
+              </ul>
+              <h3>Challenges</h3>
+              <h3>Scale</h3>
+            </div> -->
+          </div>
           <div class="work-info">
             <div class="description-container">
               <div class="description-title">
@@ -134,7 +170,17 @@
         </div>
         <span class="divider"></span>
         <div class="work-row">
-          <img src="images/battleship.png" alt="BrüCycle">
+          <div class="pic-snip">
+            <div class="work-image"><img src="images/battleship.png" alt="Battleship"></div>
+            <!-- <div class="work-snippet">
+              <h3>My Contributions</h3>
+              <ul>
+                <li></li>
+              </ul>
+              <h3>Challenges</h3>
+              <h3>Scale</h3>
+            </div> -->
+          </div>
           <div class="work-info">
             <div class="description-container">
               <div class="description-title">
