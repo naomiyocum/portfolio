@@ -81,7 +81,7 @@ nav ul li a:hover::after{
   width: 100%;
 }
 .header-text{
-  margin-top: 20%;
+  margin-top: 25vh;
   font-size: 2vw;
   text-shadow: 2px 2px #151515;
 }
@@ -263,7 +263,7 @@ span.quote-exp{
   background-color: #003847;
   color: #fff;
   border: 2px solid #00bfff;
-  padding: 10px 20px;
+  padding: 1vw 2vw;
   text-decoration: none;
   border-radius: 15px;
   font-size: 1.3vw;
