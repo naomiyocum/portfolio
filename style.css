@@ -226,12 +226,6 @@ span.quote-exp{
   width: 100%;
   border-radius: 10px;
 }
-.pic-snip{
-  display:flex;
-}
-.work-image{
-  flex-basis: 70%;
-}
 .work-snippet{
   flex-basis: 40%;
   border: 2px;
