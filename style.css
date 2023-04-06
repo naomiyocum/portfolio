@@ -220,16 +220,11 @@ span.quote-exp{
 }
 .work-list{
   padding: 60px 25px;
+  margin-right: 30em;
 }
 .work-row img{
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
-}
-.pic-snip{
-  display:flex;
-}
-.work-image{
-  flex-basis: 70%;
 }
 .work-snippet{
   flex-basis: 40%;
@@ -263,10 +258,10 @@ span.quote-exp{
   background-color: #003847;
   color: #fff;
   border: 2px solid #00bfff;
-  padding: 1vw 2vw;
+  padding: 0.8vw 1.2vw;
   text-decoration: none;
   border-radius: 15px;
-  font-size: 1.3vw;
+  font-size: 1vw;
 }
 .work-buttons:hover {
   background-color: #0099cc6b;
